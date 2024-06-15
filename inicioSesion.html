@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="inner-container">
+            <form action="">
+                <label for="username">Username</label>
+                <input id="username" type="text">
+                <label for="password">Password</label>
+                <input id="password" type="password">
+                <button type="submit" onclick="login()">Next</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    function login(){
+        event.preventDefault();
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+
+        if(username === "Kevin" && password === "Chavez"){
+            alert("Welcome!");
+        }else{
+            alert("Wrong Credentials");
+        }
+    }
+</script>
+</html>
